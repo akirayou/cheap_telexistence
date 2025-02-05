@@ -6,7 +6,7 @@ PSX psx;
 const unsigned long  PID_span_ms =10;
 const float PID_span=PID_span_ms/1000.0f;
 const unsigned long PID_span_us=PID_span_ms*1000;
-const float encoder_rate=1e+6f/2500.0f/2.5; //maxパワーのeSpeedをを1ちょっとにする
+const float encoder_rate=1e+6f/2500.0f/2.5*0.5; //maxパワーのeSpeedをを1ちょっとにする
 SPDMotor motorLF(18, 31, false, 12, 35, 34,encoder_rate,PID_span_us); 
 SPDMotor motorRF(19, 38, true ,  8, 37, 36,encoder_rate,PID_span_us); 
 SPDMotor motorLR( 3, 49, false,  6, 42, 43,encoder_rate,PID_span_us); 

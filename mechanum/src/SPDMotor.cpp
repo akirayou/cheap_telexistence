@@ -1,5 +1,5 @@
 #include "SPDMotor.h"
-#define PWM_LIMIT 150
+#define PWM_LIMIT 250
 SPDMotor::SPDMotor( int encoderA, int encoderB, bool encoderReversed, int motorPWM, int motorDir1, int motorDir2 ,float speedMul,unsigned long PID_span) {
   _encoder = new Encoder(encoderA, encoderB);
   _encoderReversed = encoderReversed;
